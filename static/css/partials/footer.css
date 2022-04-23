@@ -1,1 +1,43 @@
 /* footer code here */
+footer{
+    background-color: #051929;
+    color: white;
+    text-align: center;
+}
+
+footer a{
+    display: inline;
+}
+.fa{
+    position: relative;
+    display: inline;
+    padding: 10px;
+    margin: 6px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    float: right;
+    top: 6px;
+    right: 20px;
+}
+
+.fa:hover{
+    text-decoration: underline;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }

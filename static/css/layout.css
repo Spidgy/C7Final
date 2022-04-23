@@ -1,11 +1,12 @@
 body {
-    max-width: 1850px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: white;
+    background: #FFFFFF;
+    overflow-x: hidden;
 }
 
 main {
@@ -26,6 +27,7 @@ main {
 
 .homeTxt{
     position: absolute;
+    z-index: 2;
 }
 
 .homeImg{
@@ -35,6 +37,23 @@ main {
     height: 100%;
     max-width: 100%;
     object-fit: cover;
+    z-index: 0;
+    position: relative;
+    display: inline;
+}
+
+.squiggleImg{
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no repeat;
+    position: absolute;
+    object-fit: cover;
+    width: 90%;
+    height: 100%;
+    max-width: 90%;
+    z-index: 1;
+    overflow: hidden;
+    left: 400px;
 }
 
 #section1{
@@ -59,21 +78,21 @@ main {
 }
 
 #section3{
-    height: 500px;
-    background: yellow;
+    height: 440px;
+    background: #F0EFEF;
     display: inline-block;
     width: 100%;
 }
 
 #section4{
     height: 700px;
-    background: gray;
+    background: #F2FBFC;
     display: inline-block;
     width: 100%;
 }
 
 #section5{
-    height: 900px;
+    height: 920px;
     background: teal;
     display: inline-block;
     width: 100%;
