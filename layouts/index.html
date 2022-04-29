@@ -1,7 +1,47 @@
 {{ define "main" }}
 
+<style>
+
+.layer{
+    background-color: #F0EFEF;
+    opacity: .8;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    padding-bottom: 520px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.delivery{
+    column-count: 4;
+    column-gap: 0;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    justify-content: space-evenly;
+    display: inline-block;
+    column-width: 250px;
+}
+
+ figure {
+    margin: auto;
+}
+
+figure img {
+    display: block;
+    position: relative;
+    object-fit: contain;
+    
+}
+
+figcaption {
+    text-align: center;
+    position: relative;
+}
+</style>
+
 <div id="section1">
-    <h1 class="homeTxt">One Team, <br/>  One Fight</h1>
+    <h1 class="homeTxt" style="left: 150px; font-family: Roboto; font-size: 5.5rem; text-indent: -80px; font-weight: normal; box-sizing: border-box;">One Team, <br/>  One Fight</h1>
     <img class="squiggleImg" src="/img/link.png" alt="squiggle">
     <img class="homeImg" src="/img/human_traficking_theme.jpg" alt="homeimg">
     
@@ -9,22 +49,49 @@
 
 <div id="section2">
     <div id="descWrap">
-        <h1 style="color: white; text-align: center; font-weight: bold;">C7 Human Trafficking Coalition</h1>
-        <h1 style="color: white; text-align: center; line-height: 1.5; font-weight: normal;">is a collaboration of over 40 nonprofits, ministries, social service organizations, healthcare providers, mental health professionals, government agencies, first responders, and community leaders. Together we work to combat human trafficking by bringing awareness, education, training, and victim services to the North Texas region.</h1>
+        <h1 style="color: white; text-align: center; font-weight: bold; font-family: Roboto; letter-spacing: 3px; padding-top: 5px; margin-bottom: 5px;">C7 Human Trafficking Coalition</h1>
+        <h1 style="color: white; text-align: center; line-height: 1.5; font-weight: normal; font-family: Roboto; margin-top: 0px;">is a collaboration of over 40 nonprofits, ministries, social service organizations, healthcare providers, mental health professionals, government agencies, first responders, and community leaders. Together we work to combat human trafficking by bringing awareness, education, training, and victim services to the North Texas region.</h1>
     </div>
 </div>
 
 <div id="section3">
-    <h1>What We Do</h1>
+    <h1 style=" font-family: Segoe UI; padding-left: 20px; margin-left: 40px; border-left: 6px; border-left-style: solid; border-color: #14CEFD; ">Delivering lasting impact</h1>
+    <h2 style=" font-family: Segoe UI; padding-left: 20px; margin-left: 40px;">The C7HTC helps people to survive, recover, and rebuild their lives.</h2>
+    <div class="delivery">
+        <figure>
+        <img src="\img\serve_icon.png" alt="">
+        <figcaption>We serve</figcaption>
+        </figure>
+        <figure>
+        <img src="\img\work_icon.png" alt="">
+        <figcaption>We work</figcaption>
+        </figure>
+        <figure>
+        <img src="\img\respond_icon.png" alt="">
+        <figcaption>We respond</figcaption>
+        </figure>
+        <figure>
+        <img src="\img\resettle_icon.png" alt="">
+        <figcaption>We resettle</figcaption>
+        </figure>
+    </div>
 </div>
 
 <div id="section4">
-    <h1>News Section</h1>
+    <h1 style=" font-family: Segoe UI; padding-left: 20px; margin-left: 40px; border-left: 6px; border-left-style: solid; border-color: #14CEFD; ">News & Features</h1>
 </div>
 
 <div id="section5">
-    <h1 class="homeTxt">Trafficking Description</h1>
     <img class="homeImg" src="\img\e393a5784f03ab145b3b2da57a80c82a.jpg" alt="img">
+    <div class="layer">
+        <h1 style=" margin-left: 20px; padding-left: 20px; font-family: Segoe UI; border-left: 6px; border-left-style: solid; border-color: #14CEFD; font-size: 2.2rem;">What is Human Trafficking?</h1>
+        <ul style="font-family: Segoe UI; font-size: 1.15rem; font-weight: bold; line-height: 3rem;">
+            <li>Texas is 2nd in the nation for calls to the National Human Trafficking Hotline</li>
+            <li>75% oc children have been exploited for 2 or more years</li>
+            <li>75% of victims don't know they are trafficked</li>
+            <li>50% of victims were 14 when trafficking began</li>
+        </ul>
+    </div>
 </div>
 
 {{end}}

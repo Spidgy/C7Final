@@ -11,16 +11,16 @@ footer a{
 .fa{
     position: relative;
     display: inline;
-    padding: 10px;
-    margin: 6px;
+    padding: 6px;
+    margin: 7px 20px;
     font-size: 30px;
     width: 15px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     float: right;
-    top: 6px;
-    right: 20px;
+    top: 4px;
+    right: 30px;
 }
 
 .fa:hover{

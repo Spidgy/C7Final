@@ -1,7 +1,13 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -21,7 +27,10 @@ main {
 
 @media screen and (max-width: 480px){
     img {
-        width: 400px
+        width: 400px;
+    }
+    #section3{
+        width: 100%;
     }
 }
 
@@ -62,17 +71,21 @@ main {
     display: inline-block;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 #descWrap{
     background-color: #0A2526;
     width: 75%;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
 
 #section2{
     height: 300px;
+    background: #F2FBFC;
     display: inline-block;
     width: 100%;
 }
@@ -82,6 +95,7 @@ main {
     background: #F0EFEF;
     display: inline-block;
     width: 100%;
+    overflow: hidden;
 }
 
 #section4{
@@ -96,6 +110,12 @@ main {
     background: teal;
     display: inline-block;
     width: 100%;
+    position: relative;
+}
+
+.sec5Layer{
+    background-color: yellow;
+
 }
 
 #contact{
