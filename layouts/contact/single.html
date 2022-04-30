@@ -5,7 +5,38 @@
 
 <div id="contact">
 
-{{ .Content }}
+<div class="contact1">
+    <h1 style="text-align: center; font-family: Segoe UI; font-size: 2.6rem;">Contact Us</h1>
+    <div style="column-count: 2; text-align: center;">
+    <h2>Call: Toll-free National Human Trafficking hotline </br> 000-000-0000 </h2>
+    <h2>Call: C7 Human Trafficking Coalition Contact Line </br> 000-000-0000</h2>
+    </div>
+</div>
+
+<div class="contact2">
+    {{ .Content }}
+</div>
+
+<div class="contact3">
+    <form name="contact" action="https://getform.io/" method="POST">
+        <div>
+            <input type="text" placeholder="Name" name="name">
+        </div>
+        <div>
+            <input type="text" placeholder="Email" name="mail">
+        </div>
+        <div>
+            <input type="text" placeholder="Subject" name="message">
+        </div>
+        <div>
+            <input type="text" placeholder="Message" name="message">
+        </div>
+        <div>
+            <input type="submit" value="Subscribe">
+        </div>
+    
+    </form>
+</div>
 
 </div>
 
