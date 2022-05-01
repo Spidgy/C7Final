@@ -16,6 +16,23 @@ header{
     display: inline-block
 }
 
+header h3 a{
+    position: relative; 
+    font-family: Roboto; 
+    font-weight: lighter; 
+    font-size: .97rem;
+    text-decoration: none; 
+    color: lightgray;
+    padding-left: 200px;
+}
+
+header h3 a:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
 header img{
     float: left;
     width: 350px;

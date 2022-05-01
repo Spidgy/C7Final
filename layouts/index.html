@@ -15,12 +15,13 @@
 
 .delivery{
     column-count: 4;
-    column-gap: 0;
+    column-gap: 210px;
     page-break-inside: avoid;
     break-inside: avoid;
     justify-content: space-evenly;
     display: inline-block;
     column-width: 250px;
+    position: relative;
 }
 
  figure {
@@ -28,15 +29,21 @@
 }
 
 figure img {
-    display: block;
+    display: inline-block;
     position: relative;
     object-fit: contain;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
     
 }
 
 figcaption {
     text-align: center;
     position: relative;
+    font-family: Segoe UI;
+    font-weight: bolder;
+    font-size: larger;
 }
 </style>
 
@@ -58,19 +65,19 @@ figcaption {
     <h1 style=" font-family: Segoe UI; padding-left: 20px; margin-left: 40px; border-left: 6px; border-left-style: solid; border-color: #14CEFD; ">Delivering lasting impact</h1>
     <h2 style=" font-family: Segoe UI; padding-left: 20px; margin-left: 40px;">The C7HTC helps people to survive, recover, and rebuild their lives.</h2>
     <div class="delivery">
-        <figure>
+        <figure style="grid-column: 1;">
         <img src="\img\serve_icon.png" alt="">
         <figcaption>We serve</figcaption>
         </figure>
-        <figure>
+        <figure style="grid-column: 2;">
         <img src="\img\work_icon.png" alt="">
         <figcaption>We work</figcaption>
         </figure>
-        <figure>
+        <figure style="grid-column: 3;">
         <img src="\img\respond_icon.png" alt="">
         <figcaption>We respond</figcaption>
         </figure>
-        <figure>
+        <figure style="grid-column: 4;">
         <img src="\img\resettle_icon.png" alt="">
         <figcaption>We resettle</figcaption>
         </figure>
@@ -79,6 +86,14 @@ figcaption {
 
 <div id="section4">
     <h1 style=" font-family: Segoe UI; padding-left: 20px; margin-left: 40px; border-left: 6px; border-left-style: solid; border-color: #14CEFD; ">News & Features</h1>
+    <div style="column-count: 2; text-align: center;">
+        {{ .Content }}
+        <!-- <div style="grid-column: 2; position: relative;">
+            {{ with .Params.featured_image }}
+            <img src="{{ . }}">
+            {{ end }}
+        </div> -->
+    </div>
 </div>
 
 <div id="section5">
