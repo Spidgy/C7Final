@@ -159,6 +159,9 @@ main {
     background: teal;
     display: inline-block;
     width: 100%;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
 }
 
 #upcoming{
@@ -166,6 +169,9 @@ main {
     background: #e1f2f4;
     display: inline-block;
     width: 100%;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
 }
 
 #volunteer{
@@ -173,6 +179,9 @@ main {
     background: #b9baba;
     display: inline-block;
     width: 100%;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
 }
 
 form {
