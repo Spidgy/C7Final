@@ -1,0 +1,6 @@
+@import "gloabl.css";
+@import "layout.css";
+
+/* partials */
+@import "partials/footer.css";
+@import "partials/header.css";
