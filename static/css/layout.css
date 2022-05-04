@@ -155,12 +155,15 @@ main {
 }
 
 #action{
-    height: 250px;
-    background: teal;
+    height: 300px;
     display: inline-block;
     width: 100%;
     text-decoration: none;
-    color: black;
+    color: rgb(3, 3, 3);
+    font-family: Roboto;
+}
+
+.events_link {
     font-family: Roboto;
 }
 
@@ -229,4 +232,12 @@ input[type=submit]:hover {
 .about1{
     grid-column: 1/3;
     grid-row: 1;
+}
+
+.event{
+    font-family: Roboto;
+    border-left: 6px;
+    border-color: rgb(37, 209, 209);
+    border-left-style: solid;
+    padding-left: 6px;
 }
