@@ -3,12 +3,15 @@
 
 <div style="margin: 0px 120px;">
     <div id="action">
+        <br>
+        <br>
         <div class="event" style ="font-size:35px;"><b>Take Action</b></div>
         <hr> <br>
             <span style="font-size:25px; "> <b>Do you want to be involved in fighting sex trafficking with the C7 Human Trafficking Coalition? </b></span> <br>
             <span style="font-size:25px;">You can make a difference! We have listed the most recent schedule of events here. Please join us. We are committed to turning idleness into action! We will post other coalition member events here as well as on our Facebook page .
             </span>
         <br>
+    <br>
     <br>
 </div>
 
@@ -17,7 +20,7 @@
     <hr> <br>
     <div class="container text-left">
         {{ range .Params.up_events }}
-        <a class="btn btn-outline-primary" style="margin-top: 1%; margin-right: 5%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
+        <a class="btn btn-outline-dark" style="margin-top: 1%; margin-right: 5%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
             }}</a>
         {{ end }}
     </div>
@@ -27,28 +30,29 @@
 <div id="volunteer">
     <div class="event" style ="font-size:35px;"><b>Monthly Volunteer Opportunities</b></div>
     <hr> <br>
+    <span style="font-size:25px; color: rgb(4, 38, 53);"> <b>Check with individual campuses during the Covid-19 crisis. </b></span> <br><br>
     <div class="container text-left">
         {{ range .Params.sat_a }}
         <span style="font-size:25px; "> <b>1st Saturday </b></span> <br>
-        <a class="btn btn-outline-primary" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
+        <a class="btn btn-outline-dark" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
             }}</a>
             <br>
         {{ end }}
         {{ range .Params.sat_b }}
         <span style="font-size:25px; "> <b>2nd Saturday </b></span> <br>
-        <a class="btn btn-outline-primary" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
+        <a class="btn btn-outline-dark" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
             }}</a>
             <br>
         {{ end }}
         {{ range .Params.sat_c }}
         <span style="font-size:25px; "> <b>3rd Saturday </b></span> <br>
-        <a class="btn btn-outline-primary" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
+        <a class="btn btn-outline-dark" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
             }}</a>
             <br>
         {{ end }}
         {{ range .Params.sat_d }}
         <span style="font-size:25px; "> <b>4th Saturday </b></span> <br>
-        <a class="btn btn-outline-primary" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
+        <a class="btn btn-outline-dark" style="margin-top: 1%; margin-bottom: 2%; font-size:20px;" href="{{ .network.url_page}}" target="_blank"> {{ .network.context
             }}</a>
             <br>
         {{ end }}
